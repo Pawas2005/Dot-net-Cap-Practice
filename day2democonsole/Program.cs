@@ -42,6 +42,11 @@ class Program
         // bill.Ebills.Run();
 
         //7. Calling VowOrCon.cs file
-        VowCon.VowORCon.Run();
+        // VowCon.VowORCon.Run();
+
+        //8.Triangle Type
+        // Triangle.TriangleType.Run();
+
+        
     }
 }
