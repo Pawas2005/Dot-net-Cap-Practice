@@ -44,9 +44,10 @@ class Program
         //7. Calling VowOrCon.cs file
         // VowCon.VowORCon.Run();
 
-        //8.Triangle Type
+        //8.Calling Triangle Type.cs file
         // Triangle.TriangleType.Run();
 
-        
+        //9.Calling Quadrant.cs file
+        Quadrant.QuadrantFinder.Run();
     }
 }
