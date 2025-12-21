@@ -57,7 +57,10 @@ class Program
         // //11.Calling Valid Date Check.cs
         // DateCheck.DateCheck.Run();
 
-        //12.Calling ATM Withdrawal.cs file
-        Withdraw.ATMWithdraw.Run();
+        // //12.Calling ATM Withdrawal.cs file
+        // Withdraw.ATMWithdraw.Run();
+
+        //13.Calling Profit/Loss.cs file
+        ProfitLoss.ProfitLoss.Run();
     }
 }
