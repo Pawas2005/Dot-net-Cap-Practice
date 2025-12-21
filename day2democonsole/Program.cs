@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Security.Cryptography;
 using Day2DemoConsole;  //for calling Student.cs file
 
 class Program
@@ -63,7 +62,10 @@ class Program
         // //13.Calling Profit/Loss.cs file
         // ProfitLoss.ProfitLoss.Run();
 
-        //14.Calling Rock Paper Scissors.cs file
-        RockPaperScissor.RockPaperScissor.Run();
+        // //14.Calling Rock Paper Scissors.cs file
+        // RockPaperScissor.RockPaperScissor.Run();
+
+        //15.Calling Simple Calculator.cs file
+        // Calculator.Calculator.Run();
     }
 }
