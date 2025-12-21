@@ -60,7 +60,10 @@ class Program
         // //12.Calling ATM Withdrawal.cs file
         // Withdraw.ATMWithdraw.Run();
 
-        //13.Calling Profit/Loss.cs file
-        ProfitLoss.ProfitLoss.Run();
+        // //13.Calling Profit/Loss.cs file
+        // ProfitLoss.ProfitLoss.Run();
+
+        //14.Calling Rock Paper Scissors.cs file
+        RockPaperScissor.RockPaperScissor.Run();
     }
 }
