@@ -22,7 +22,7 @@ namespace PrimeNumber
                     if(n % i == 0)
                     {
                         isPrime = false;
-                        break; //stop loop immediately
+                        break; //stop loop immediately if any non prime number found
                     }
                 }
             }

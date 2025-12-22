@@ -72,6 +72,9 @@ class Program
         // Fibonacci.FibonacciSeries.Run();
 
         //17.Calling Prime Number.cs file
-        PrimeNumber.PrimeNumber.Run();
+        // PrimeNumber.PrimeNumber.Run();
+
+        //18.Calling Armstrong Number.cs file
+        ArmStrong.ArmStrong.Run();
     }
 }
