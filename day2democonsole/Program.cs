@@ -68,7 +68,10 @@ class Program
         //15.Calling Simple Calculator.cs file
         // Calculator.Calculator.Run();
 
-        //16.Calling Fibonacci Series.cs file
-        Fibonacci.FibonacciSeries.Run();
+        // //16.Calling Fibonacci Series.cs file
+        // Fibonacci.FibonacciSeries.Run();
+
+        //17.Calling Prime Number.cs file
+        PrimeNumber.PrimeNumber.Run();
     }
 }
