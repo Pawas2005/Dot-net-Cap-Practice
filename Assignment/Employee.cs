@@ -1,3 +1,6 @@
+// Problem Statement: Employee Access & Salary Processing System
+// Develop a menu-driven Java program for a company to process employee details and determine role, access level, and final salary.
+
 using System;
 using System.Security.Cryptography;
 
