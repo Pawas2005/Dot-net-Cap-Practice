@@ -78,6 +78,9 @@ class Program
         // ArmStrong.ArmStrong.Run();
 
         //19.Calling Reverse&Palindrome.cs file
-        revAndpalind.RevAndPalindrome.Run();
+        // revAndpalind.RevAndPalindrome.Run();
+
+        //20.Calling GCD&LCM.cs file
+        GCDAndLCM.GCDAndLCM.Run();
     }
 }
