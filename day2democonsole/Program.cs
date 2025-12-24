@@ -75,6 +75,9 @@ class Program
         // PrimeNumber.PrimeNumber.Run();
 
         //18.Calling Armstrong Number.cs file
-        ArmStrong.ArmStrong.Run();
+        // ArmStrong.ArmStrong.Run();
+
+        //19.Calling Reverse&Palindrome.cs file
+        revAndpalind.RevAndPalindrome.Run();
     }
 }
