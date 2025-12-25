@@ -19,4 +19,7 @@
 // SimpleQues.SumOnlyPositive.Run();
 
 //7.Calling MultiplicationTable.cs file
-SimpleQues.MultiplicationTable.Run();
+// SimpleQues.MultiplicationTable.Run();
+
+//8.Calling ArrOfStr.cs file
+SimpleQues.ArrOfStr.Run();
