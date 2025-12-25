@@ -13,4 +13,7 @@
 // SimpleQues.LargestOfThree.Run();
 
 //5.Calling Convert a number of seconds into a string formatted as m:ss file.
-SimpleQues.SecToStr.Run();
+// SimpleQues.SecToStr.Run();
+
+//6.Calling Sum Only +ve Number.cs file
+SimpleQues.SumOnlyPositive.Run();
