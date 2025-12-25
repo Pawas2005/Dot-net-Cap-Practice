@@ -7,4 +7,7 @@
 // SimpleQues.FeetToCm.Run();
 
 //3.calling heightCategory.cs file
-SimpleQues.heightCategory.Run();
+// SimpleQues.heightCategory.Run();
+
+//4.Calling largest of three.cs file
+SimpleQues.LargestOfThree.Run();
