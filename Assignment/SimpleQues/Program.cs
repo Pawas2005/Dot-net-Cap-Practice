@@ -10,4 +10,7 @@
 // SimpleQues.heightCategory.Run();
 
 //4.Calling largest of three.cs file
-SimpleQues.LargestOfThree.Run();
+// SimpleQues.LargestOfThree.Run();
+
+//5.Calling Convert a number of seconds into a string formatted as m:ss file.
+SimpleQues.SecToStr.Run();
