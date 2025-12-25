@@ -16,4 +16,7 @@
 // SimpleQues.SecToStr.Run();
 
 //6.Calling Sum Only +ve Number.cs file
-SimpleQues.SumOnlyPositive.Run();
+// SimpleQues.SumOnlyPositive.Run();
+
+//7.Calling MultiplicationTable.cs file
+SimpleQues.MultiplicationTable.Run();
