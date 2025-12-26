@@ -22,4 +22,7 @@
 // SimpleQues.MultiplicationTable.Run();
 
 //8.Calling ArrOfStr.cs file
-SimpleQues.ArrOfStr.Run();
+// SimpleQues.ArrOfStr.Run();
+
+//Calling GCD.cs file
+SimpleQues.GCD.Run();
