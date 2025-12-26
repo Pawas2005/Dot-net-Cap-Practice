@@ -28,4 +28,7 @@
 // SimpleQues.GCD.Run();
 
 //10.Calling BankAccount.cs file
-SimpleQues.BankAccount.Run();
+// SimpleQues.BankAccount.Run();
+
+//11.Calling Sum.cs file
+SimpleQues.Sum.Run();
