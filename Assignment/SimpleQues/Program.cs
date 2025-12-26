@@ -31,4 +31,7 @@
 // SimpleQues.BankAccount.Run();
 
 //11.Calling Sum.cs file
-SimpleQues.Sum.Run();
+// SimpleQues.Sum.Run();
+
+//12.Calling SummaryString.cs file
+SimpleQues.SummaryString.Run();
