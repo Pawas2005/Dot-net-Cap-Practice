@@ -24,5 +24,8 @@
 //8.Calling ArrOfStr.cs file
 // SimpleQues.ArrOfStr.Run();
 
-//Calling GCD.cs file
-SimpleQues.GCD.Run();
+//9.Calling GCD.cs file
+// SimpleQues.GCD.Run();
+
+//10.Calling BankAccount.cs file
+SimpleQues.BankAccount.Run();
