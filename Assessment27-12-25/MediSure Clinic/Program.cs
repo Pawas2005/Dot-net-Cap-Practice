@@ -98,7 +98,7 @@ class Program
         }
         bill.MedicineCharges = med;
 
-        // Billing Calculations
+        //Calculationing Bill
         bill.GrossAmount = bill.ConsultationFee + bill.LabCharges + bill.MedicineCharges;
 
         bill.DiscountAmount = bill.HasInsurance ? bill.GrossAmount * 0.10m : 0;
