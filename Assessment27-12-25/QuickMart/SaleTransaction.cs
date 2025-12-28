@@ -55,9 +55,10 @@ public class SaleTransaction
             Console.WriteLine("Selling Amount must be greater than 0.");
             return;
         }
+        Console.WriteLine();
 
-        CalculationMethod();
         Console.WriteLine("Transaction saved successfully.");
+        CalculationMethod();
     }
 
     public void CalculationMethod()

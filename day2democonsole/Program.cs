@@ -81,6 +81,9 @@ class Program
         // revAndpalind.RevAndPalindrome.Run();
 
         //20.Calling GCD&LCM.cs file
-        GCDAndLCM.GCDAndLCM.Run();
+        // GCDAndLCM.GCDAndLCM.Run();
+
+        //21.Calling Pascal'sTriangle.cs file
+        PascalTriangle.Run();
     }
 }

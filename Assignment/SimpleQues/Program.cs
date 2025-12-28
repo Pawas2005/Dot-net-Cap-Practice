@@ -34,4 +34,9 @@
 // SimpleQues.Sum.Run();
 
 //12.Calling SummaryString.cs file
-SimpleQues.SummaryString.Run();
+// SimpleQues.SummaryString.Run();
+
+//13.Calling 
+
+
+//14.Calling 
