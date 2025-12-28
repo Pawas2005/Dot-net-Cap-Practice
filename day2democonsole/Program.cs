@@ -84,6 +84,9 @@ class Program
         // GCDAndLCM.GCDAndLCM.Run();
 
         //21.Calling Pascal'sTriangle.cs file
-        PascalTriangle.Run();
+        // PascalTriangle.Run();
+
+        //22.Calling Binary to Decimal.cs file
+        BinToDec.Run();
     }
 }
