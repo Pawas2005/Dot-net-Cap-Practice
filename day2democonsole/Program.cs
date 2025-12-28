@@ -90,6 +90,9 @@ class Program
         // BinToDec.Run();
 
         //23.Calling Diamond.cs file
-        PrintDiamond.Run();
+        // PrintDiamond.Run();
+
+        //24.Calling FactorialNumber.cs file
+        FactorialNumber.Run();
     }
 }
