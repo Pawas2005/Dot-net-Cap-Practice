@@ -93,6 +93,9 @@ class Program
         // PrintDiamond.Run();
 
         //24.Calling FactorialNumber.cs file
-        FactorialNumber.Run();
+        // FactorialNumber.Run();
+
+        //25.Calling GuessNumber.cs file
+        GuessNumber.Run();
     }
 }
