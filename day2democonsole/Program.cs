@@ -87,6 +87,9 @@ class Program
         // PascalTriangle.Run();
 
         //22.Calling Binary to Decimal.cs file
-        BinToDec.Run();
+        // BinToDec.Run();
+
+        //23.Calling Diamond.cs file
+        PrintDiamond.Run();
     }
 }
