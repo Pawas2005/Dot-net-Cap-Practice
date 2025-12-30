@@ -11,6 +11,8 @@ namespace LPU_DAL
     public class StudentDAO : IStudentCRUD
     {
         static List<Student> studentList = null;
+
+
         public StudentDAO()
         {
             //Collection Init
@@ -25,7 +27,25 @@ namespace LPU_DAL
         }
         public bool DropStudentDetails(int id)
         {
-            throw new NotImplementedException();
+            bool flag = false;
+            if (id != 0)
+            {
+                Student studToDelete = studentList.Find(s => s.StudentID == id);
+                if (studToDelete != null)
+                {
+                    studentList.Remove(studToDelete);
+                    flag = true;
+                }
+                else
+                {
+                    throw new LPUException("Student Record Not Found.");
+                }
+            }
+            else
+            {
+                throw new LPUException("Invalid Student ID.");
+            }
+            return flag;
         }
 
         public bool EnrollStudent(Student sObj)
@@ -33,8 +53,17 @@ namespace LPU_DAL
             bool flag = false;
             if(sObj != null)
             {
+                Student existingStud = studentList.Find(s => s.StudentID == sObj.StudentID);
+                if (existingStud != null)
+                {
+                    throw new LPUException("Student with this ID already exists.");
+                }
                 studentList.Add(sObj);
                 flag = true;
+            }
+            else
+            {
+                throw new LPUException("Student object cannot be null.");
             }
             return flag;
         }
@@ -59,13 +88,41 @@ namespace LPU_DAL
 
         public List<Student> SearchStudentByName(string name)
         {
-            List<Student> data = studentList.FindAll(p => p.Name == name);
+            List<Student> data;
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                data = studentList;
+            }
+            else
+            {
+                data = studentList.FindAll(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+            }
             return data;
         }
 
         public bool UpdateStudentDetails(int id, Student newObj)
         {
-            throw new NotImplementedException();
+            bool flag = false;
+            if (id != 0 && newObj != null)
+            {
+                Student studToUpdate = studentList.Find(s => s.StudentID == id);
+                if (studToUpdate != null)
+                {
+                    studToUpdate.Name = newObj.Name;
+                    studToUpdate.Course = newObj.Course;
+                    studToUpdate.Address = newObj.Address;
+                    flag = true;
+                }
+                else
+                {
+                    throw new LPUException("Student Record Not Found.");
+                }
+            }
+            else
+            {
+                throw new LPUException("Invalid Student ID or Student object.");
+            }
+            return flag;
         }
     }
 }
