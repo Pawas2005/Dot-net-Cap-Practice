@@ -1,4 +1,5 @@
 ﻿using System;
+using SimpleQues;
 
 //1.Calling area of a circle
 // SimpleQues.Circle.Run();
@@ -39,4 +40,29 @@
 //13.Calling 
 
 
-//14.Calling 
+//14.Calling totalpayroll.cs file
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter number of employees : ");
+        int n = int.Parse(Console.ReadLine());
+
+        string[] employees = new string[n];
+
+        Console.WriteLine("\nEnter employee details:");
+        Console.WriteLine("Format:");
+        Console.WriteLine("H rate hours");
+        Console.WriteLine("S monthlySalary");
+        Console.WriteLine("C commission baseSalary\n");
+
+        for(int i = 0; i < n; i++)
+        {
+            Console.Write($"Employee {i + 1} : ");
+            employees[i] = Console.ReadLine();
+        }
+
+        decimal totalPay = TotalPyroll.CalculateTotal(employees);
+        Console.WriteLine($"\nTotal Payroll = {totalPay:F2}");
+    }
+}
