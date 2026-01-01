@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using SimpleQues;
 
 //1.Calling area of a circle
@@ -41,28 +42,57 @@ using SimpleQues;
 
 
 //14.Calling totalpayroll.cs file
+// class Program
+// {
+//     static void Main()
+//     {
+//         Console.Write("Enter number of employees : ");
+//         int n = int.Parse(Console.ReadLine());
+
+//         string[] employees = new string[n];
+
+//         Console.WriteLine("\nEnter employee details:");
+//         Console.WriteLine("Format:");
+//         Console.WriteLine("H rate hours");
+//         Console.WriteLine("S monthlySalary");
+//         Console.WriteLine("C commission baseSalary\n");
+
+//         for(int i = 0; i < n; i++)
+//         {
+//             Console.Write($"Employee {i + 1} : ");
+//             employees[i] = Console.ReadLine();
+//         }
+
+//         decimal totalPay = TotalPyroll.CalculateTotal(employees);
+//         Console.WriteLine($"\nTotal Payroll = {totalPay:F2}");
+//     }
+// }
+
+
+//15.Calling TotalArea.cs file
+using SimpleQues.Shapes;
 class Program
 {
     static void Main()
     {
-        Console.Write("Enter number of employees : ");
+        Console.Write("Enter no. of Shapes : ");
         int n = int.Parse(Console.ReadLine());
 
-        string[] employees = new string[n];
+        string[] shapes = new string[n];
 
-        Console.WriteLine("\nEnter employee details:");
-        Console.WriteLine("Format:");
-        Console.WriteLine("H rate hours");
-        Console.WriteLine("S monthlySalary");
-        Console.WriteLine("C commission baseSalary\n");
+        Console.WriteLine("\nEnter Shape Details : ");
+        Console.WriteLine("Format: ");
+        Console.WriteLine("C r (Circle ---> radius r)");
+        Console.WriteLine("R w h (Rectangle ----> width w, height h)");
+        Console.WriteLine("T b h (Triangle ----> base b, height h)");
 
         for(int i = 0; i < n; i++)
         {
-            Console.Write($"Employee {i + 1} : ");
-            employees[i] = Console.ReadLine();
+            Console.Write($"Shape {i + 1} : ");
+            shapes[i] = Console.ReadLine();
         }
 
-        decimal totalPay = TotalPyroll.CalculateTotal(employees);
-        Console.WriteLine($"\nTotal Payroll = {totalPay:F2}");
+        double totalArea = TotalAreaCalculate.ComputeArea(shapes);
+        Console.WriteLine($"Total Area = {totalArea:F2}");
     }
 }
