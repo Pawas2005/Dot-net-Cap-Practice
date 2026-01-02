@@ -70,29 +70,64 @@ using SimpleQues;
 
 
 //15.Calling TotalArea.cs file
-using SimpleQues.Shapes;
+// using SimpleQues.Shapes;
+// class Program
+// {
+//     static void Main()
+//     {
+//         Console.Write("Enter no. of Shapes : ");
+//         int n = int.Parse(Console.ReadLine());
+
+//         string[] shapes = new string[n];
+
+//         Console.WriteLine("\nEnter Shape Details : ");
+//         Console.WriteLine("Format: ");
+//         Console.WriteLine("C r (Circle ---> radius r)");
+//         Console.WriteLine("R w h (Rectangle ----> width w, height h)");
+//         Console.WriteLine("T b h (Triangle ----> base b, height h)");
+
+//         for(int i = 0; i < n; i++)
+//         {
+//             Console.Write($"Shape {i + 1} : ");
+//             shapes[i] = Console.ReadLine();
+//         }
+
+//         double totalArea = TotalAreaCalculate.ComputeArea(shapes);
+//         Console.WriteLine($"Total Area = {totalArea:F2}");
+//     }
+// }
+
+
+//16.Calling SingleArray.cs file
+using SimpleQues.SingleArray;
+
 class Program
 {
-    static void Main()
+    public static void Main()
     {
-        Console.Write("Enter no. of Shapes : ");
+        Console.Write("Enter the size of the first array : ");
         int n = int.Parse(Console.ReadLine());
 
-        string[] shapes = new string[n];
-
-        Console.WriteLine("\nEnter Shape Details : ");
-        Console.WriteLine("Format: ");
-        Console.WriteLine("C r (Circle ---> radius r)");
-        Console.WriteLine("R w h (Rectangle ----> width w, height h)");
-        Console.WriteLine("T b h (Triangle ----> base b, height h)");
-
+        int[] a = new int[n];
+        Console.WriteLine("Enter elements of the first array : ");
         for(int i = 0; i < n; i++)
         {
-            Console.Write($"Shape {i + 1} : ");
-            shapes[i] = Console.ReadLine();
+            a[i] = int.Parse(Console.ReadLine());
         }
 
-        double totalArea = TotalAreaCalculate.ComputeArea(shapes);
-        Console.WriteLine($"Total Area = {totalArea:F2}");
+        Console.Write("Enter the size of the second array : ");
+        int m = int.Parse(Console.ReadLine());
+
+        int[] b = new int[m];
+        Console.WriteLine("Enter elements of the second array : ");
+        for(int i = 0; i < m; i++)
+        {
+            b[i] = int.Parse(Console.ReadLine());
+        }
+
+        int[] merged = SingleArray.MergeSortedArrays(a, b);
+
+        Console.WriteLine("\nMerged Sorted array : ");
+        Console.WriteLine(string.Join(" ", merged));
     }
 }
